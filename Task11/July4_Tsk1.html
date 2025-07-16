@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            color: white;
+        }
+        .hh1{
+            text-wrap: nowrap;
+        }
+        .hh2{
+            text-wrap: nowrap;
+            overflow: hidden;
+        }
+        .hh3{
+            text-wrap: nowrap;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="hh1">This is overflowing heading</h1>
+    </div>
+    <div class="box">
+        <h1 class="hh2">This is overflow hidden heading</h1>
+    </div>
+    <div class="box">
+        <h1 class="hh3">This is Scrollable heading</h1>
+    </div>
+</body>
+</html>

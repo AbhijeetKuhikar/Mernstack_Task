@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .navbar{
+            width: 100%;
+            height: 100px;
+            background-color:white;
+            display: flex;
+            flex-direction: row;
+            outline: rgb(156, 222, 222) solid 5px;
+            margin-top: 1rem;
+
+
+        }
+        .logo{
+            width: 65%;
+            height: fit-content;
+        }
+        .options{
+            width: 35%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        .controls{
+            display: flex;
+            gap: 2rem;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        .logo{
+            
+        }
+        .logoimg{
+            background-image: url("./logo1.jpg");
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            display: flex;
+            flex-grow: 1;
+            margin-left: 150px;
+        }
+        .hero{
+            width: 100%;
+            height:  100vh;
+            background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)), url("./Backimg.jpg");
+            
+            background-position: center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        
+        .first{
+            width: 50%;
+            height:100%;
+            background-image: url("./image.png");
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .second{
+            flex-grow: 1;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            color: white;
+            row-gap: 1.5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% -50%);
+        }
+        .id1{
+            background-image: url("./contact.png");
+        
+        }
+        .id2{
+            background-image: url("./Insta.avif");
+        }
+        .id3{
+            background-image: url("./Telegram.png");
+        }
+        .id4{
+            background-image: url("./Linkedin.png");
+        }
+        .id{
+            width: 50px;
+            height: 50px;
+            background-position: center center;
+            background-size: contain;
+            border-radius: 100%;
+            border: 1px solid black;
+        }
+        .refrence{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .footer p{
+            color:white
+        }
+        button{
+            background-color: #007BFF;
+            width:180px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+        }
+        @media screen and (max-width: 576px){
+            .navbar{
+                flex-direction: column;
+                height:130px;
+            }
+            .options{
+                width: 100%;
+
+            }
+            .hero{
+                flex-direction: column;
+                position: relative;
+            }
+            .controls{
+                gap: 1rem;
+                
+            }
+            .first{
+                width: 100%;
+            }
+            .second{
+                width: 100%;
+                top: 100%;
+                align-items: center;
+                row-gap: .5rem;
+            
+                transform: translate(-50%,-50%);
+                font-size: initial;
+                color: white ;
+            
+
+            }
+            .second p{
+                display: none;
+            }
+            .id{
+                width: 30px;
+                height: 30px;
+            }
+            .footer{
+                margin-top: 100px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <div class="logoimg"></div>
+            </div>
+            <div class="options">
+                <nav class="controls">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Service</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+        <div class="hero">
+            <div class="first"></div>
+            <div class="second">
+                
+                <h3 class="heading">Hello I'M a</h3>
+                <h1><b>UI & UX</b> <b style="color: blueviolet;">Designer.</b></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur aliquid ipsum necessitatibus repudiandae et dignissimos, nulla suscipit esse minus rem! Alias provident voluptate culpa beatae ea architecto pariatur sed?</p>
+                <div class="refrence">
+                    <div class="id id1"></div>
+                    <div class="id id2"></div>
+                    <div class="id id3"></div>
+                    <div class="id id4"></div>
+                </div>
+                <button>
+                    <i class="fa-solid fa-compass"></i>
+                    Register Now!</button>
+                
+
+            </div>
+
+        </div>
+
+    <footer>
+        <div class="footer">
+            <p>2025, Created By Abhijeet Kuhikar. All rights reserved!</p>
+        </div>
+    </footer>
+</body>
+</html>

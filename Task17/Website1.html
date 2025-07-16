@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0, .75)), url("./NetflixBg.jpg");
+            
+        }
+        
+        .navbar{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-left: 10rem;
+
+            
+        }
+        .left{
+            width: 80%;
+            height: fit-content;
+        }
+        .right{
+            width: 20%;
+            padding-left: 150px;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-right: 300px;
+        }
+        
+        .textimg{
+            background-image: url("./Netlogo.jpg");
+            width: 148px;
+            height: 40px;
+            background-size: cover;
+        }
+        
+        
+        #lang{
+            width: 124.4px;
+            height: 32px;
+            background-color: black;
+            border-radius: 5px;
+            margin: 1px solid white;
+            color: white;
+        }
+        .butt{
+            background-color: red;
+            border-radius:  5px;
+            color: white;
+            width: 76.9px;
+            height: 32px;
+        }
+        .center{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 10px;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        h6{
+            font-size: 1.5rem;
+        }
+        input{
+            width: 319px;
+            height: 53px;
+            background: linear-gradient(rgba(0,0,0,.75),rgba(rgba(0,0,0, .75)));
+        }
+        button{
+            width: 180px;
+            height: 53px;
+            background-color: red;
+        }
+        @media screen and (max-width:576px) {
+            .navbar{
+                flex-direction: row;
+                
+                margin-left: 0;
+            }
+            .textimg{
+                height: 25px;
+                width: 100px;
+                align-items: left;
+                transform: translate(+130%);
+            }
+            #lang{
+                width: 40px;
+                height: 20px;
+                font: size: 0.5em;
+            }
+            .butt{
+                width: 80px;
+                height:20px;
+                font-size: 1rem;
+                text-wrap: nowrap;
+                transform: translate(-50%);
+                }
+            .right{
+                transform: translate(+18%);
+                align-items: end;
+            }
+            h1{
+                font-size: 1.2rem;
+            }
+            h6{
+                font-size: .8rem;
+            }
+            p{
+                font-size: .7rem;
+                display: none;
+            }
+            
+            h1{
+                transform: translate(-30%);
+            }
+            h6{
+                transform: translate(-27%);
+            }
+            input{
+                width: 90%;
+                transform: translate(-28%);
+                height: 25px;
+                border-radius: .5rem;
+            }
+            button{
+                width: 60%;
+                height: 25px;
+                margin-top: 1rem;
+                transform: translate(-18%);
+                border-radius: .5rem;
+            }
+            .center{
+                position: absolute;
+                bottom: +60%;
+            }
+        
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+                
+            <div class="left"><div class="textimg"></div></div>
+        
+            <div class="right">
+                <div class="options"></div>
+            <select name="English" id="lang">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+            <button class="butt">Sign in</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="center">
+            <h1>Unlimited Movies, TV</h1>
+            <h1>shows and more</h1>
+            <h6>Starts at $149. Cancel at any time.</h6>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="container">
+                <input type="text" name="email" placeholder="Email">
+                <button>
+                    <i class="fa-solid fa-compass"></i>
+                    Get Started ></button>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
