@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .Element1{
+            height: 100px;
+            width: 330px;
+            border-radius: 1rem;
+        }
+        
+        .Child{
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            margin-left: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="Element1 bg-dark position-absolute ms-5 mt-5 d-flex">
+        <div class="Child Child1 bg-danger"></div>
+        <div class="Child Child2 bg-warning"></div>
+        <div class="Child Child3 bg-success"></div>
+    </div>
+    <div class="Element1 bg-dark position-absolute top-50 start-50 d-flex">
+        <div class="Child Child1 bg-danger"></div>
+        <div class="Child Child2 bg-warning d-none"></div>
+        <div class="Child Child3 bg-success"></div>
+    </div>
+</body>
+</html>
