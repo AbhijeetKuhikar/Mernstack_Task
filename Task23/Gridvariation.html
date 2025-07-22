@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <style>
+    .parent{
+        height:200px ;
+    }
+        
+    .child{
+        height: 50px;
+    }
+       
+    </style>
+</head>
+<body>
+      <h1>Grid variations in bootstrap!</h1>
+      <h3>USe of container(breakpoints) and grid </h3>
+      <div class="parent container bg-danger-subtle 
+      border border-1 border-dark
+      text-yt text-center row
+       pt-5"> 
+        <div class="child container bg-dark text-light col-5">
+            child </div>
+        <div class="child container bg-info col">child</div>
+        <div class="child container bg-dark text-light col">child</div>
+        <div class="child container bg-light col">child</div>
+      </div>
+      <div class="parent row container bg-success-subtle pt-4 border 
+      border-1 gap-3 border-dark">
+        <div class="child col-1 bg-primary text-light">col-2</div>
+        <div class="child col-3 bg-success text-light">col-3</div>
+        <div class="child col-5 bg-warning text-light">col-5</div>
+        <div class="child col-4 bg-secondary text-light">col-4</div>
+        <div class="child col-2 bg-warning text-light">col-2</div>
+        <div class="child col-1 bg-info text-light">col-1</div>
+      </div>
+
+</body>
+</html>
