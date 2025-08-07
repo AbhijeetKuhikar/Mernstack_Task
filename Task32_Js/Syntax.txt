@@ -1,0 +1,109 @@
+//JavaScript: Variables & Data Types Summary
+
+//Variable Declaration Syntax:
+
+scope variableName = value;
+Scope: var, let, or const
+
+variableName: follows naming rules
+value: the data (any data type)
+
+//Scopes in JavaScript:
+
+Keyword	Scope           Type	       Re-declarable	           Re-assignable	       Use Case
+
+var	             Function / Global	        Yes	                        Yes	            Avoid — outdated, hoisting issues
+let	             Block Scope	            No	                        Yes	            Use when value will change
+const	         Block Scope	            No	                        No	            Use when value should not change
+
+///Declaration vs Initialization
+Declaration: defining the variable
+
+let age;
+Initialization: assigning a value
+
+age = 25;
+Can be done together:
+
+let age = 25;
+
+
+//Variable Naming Rules:
+Must be unique in the same scope
+Can include letters, numbers, and underscores (_)
+Cannot start with a number
+No spaces or special characters (except _)
+
+Naming examples:
+
+let box1234;     //correct
+let box_123;     //correct
+let 123box;      //Invalid
+
+//Re-declaration and Re-assignment
+
+let balance = 1000;
+balance = balance + 1000;   //valid
+
+let age = 22;
+let age = 23;               //  Syntax Error (can't re-declare in same scope)
+
+
+//const and Object Mutability
+const prevents re-assignment of a variable, not mutation of its content.
+
+const account = {
+  name: "Abhijeet Kuhikar",
+  phone: 8888888888,
+  address: "nagpur",
+  student: true
+};
+
+account.phone = 8888888888; //  Allowed (mutation)
+
+account = {                 //  Not allowed (re-assignment)
+  name: "Abhijeet Kuhikar",
+  phone: 8888888888,
+  address: "nagpur"
+};
+
+//Don't forget to close your strings with quotes:
+
+name: "Abhijeet Kuhikar"   //  Correct
+name: "Abhijeet Kuhikar    //  Incorrect
+
+
+//JavaScript Data Types
+
+1. Primitive Data Types (Immutable):
+Type	Example
+Number	let num = 123;
+String	let str = "abc";
+Boolean	let flag = true;
+Undefined	let x;
+Null	let y = null;
+NaN	let z = "abc" * 5; → NaN
+
+2. Non-Primitive Data Types (Mutable):
+Type	Description	Example
+Array	Ordered collection	let arr = [1, 2, 3];
+Object	Key-value pairs	let obj = { name: "amey" };
+Function	Reusable block of code	function greet() { ... }
+
+//Sample Code:
+
+let age = 22;
+const name = "amey";
+let student = false;
+
+// Updating a value
+age = 23;
+
+// Object with const
+const user = {
+  name: "amey",
+  city: "nagpur"
+};
+
+user.city = "pune";      //  allowed
+// user = {}             //  not allowed

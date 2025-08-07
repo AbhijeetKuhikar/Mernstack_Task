@@ -1,0 +1,48 @@
+//Expression
+
+-> An expressions is any valid unit that produces a value . It can be used whenever a value is expeected(like inside an assingment or as a function arguments).
+
+Example:
+
+5 + 3             // 8 (produces a value)
+"Hello"           // "Hello"
+x = 10            // 10 (assignment is an expression that returns a value)
+myFunction()      // the return value of the function
+true ? 1 : 0      // 1 (ternary expression)
+
+Expressions can be a part of a statement on their own (unless used as an expression statement)
+
+//statement
+
+A stament is an instruction that performs an action. It doesnt necessarily returns a value .
+
+Example:
+
+var x = 10;                // variable declaration statement
+if (x > 5) { ... }         // if statement
+for (let i = 0; i < 5; i++) { ... }  // for loop (statement)
+function greet() { ... }   // function declaration statement
+
+Statements control the flow of a program or define things like functions or variables.
+
+Key Differences
+Feature	                               Expression	                           Statement
+
+Produces a value	                    Yes	                             Not necessarily
+Can be assigned	                        Yes	                             No
+Ends with ;	                            Optional	                     Required (usually)
+Controls flow	                        No	                             Yes
+Used in conditionals	                Yes (e.g., x > 0)	             No (can't put an if in if(...))
+
+
+//Expression Statement
+An expression used as a statement is called an expression statement.
+
+
+Example:
+x = 5 + 3;  // expression (5 + 3) used in an assignment statement
+
+Summary
+Expression -> Evaluates to a value.
+
+Statement -> Performs an action.

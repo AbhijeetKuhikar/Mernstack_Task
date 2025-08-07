@@ -1,0 +1,50 @@
+//Summary about JavaScript
+
+//What is JavaScript?
+
+-> JavaScript* is a *programming language* used to make websites *interactive and dynamic*.
+
+---
+
+//History & Creator:
+
+-> Created by:* Brendan Eich
+-> Year:* 1995
+-> Company:* Netscape Communications
+-> Originally called *Mocha, then **LiveScript, and finally named **JavaScript* (even though it's not related to Java).
+
+---
+
+//Why Was It Created?
+
+-> To make web pages *more interactive*, like:
+-> Validating forms
+-> Creating pop-ups
+-> Adding animations
+-> Updating content without refreshing the page
+
+---
+
+//What Can JavaScript Do?
+
+-> Interact with HTML & CSS*
+-> React to user actions* (clicks, scrolls, typing)
+-> Control multimedia* (audio/video)
+-> Send/receive data* (with APIs & AJAX)
+-> Build full web applications* (frontend + backend)
+
+---
+
+Where Does It Run?
+
+-> In *web browsers* (Chrome, Firefox, Safari, etc.)
+-> On *servers* (using Node.js)
+
+---
+
+//Why Is It So Popular?
+
+-> Easy to learn
+-> Supported by all browsers
+-> Huge community & resources
+-> Used in many modern frameworks (React, Angular, Vue)
