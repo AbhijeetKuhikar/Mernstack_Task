@@ -1,0 +1,37 @@
+// Dice Roll Game – Summary
+ What the Game Does
+
+->The player and computer roll a dice (random number 1–6).
+->Dice faces (⚀⚁⚂⚃⚄⚅) are shown using emojis.
+->The game compares both rolls:
+->Higher number = Winner
+->Same number = Draw
+
+// How It Works (Step by Step)
+
+->HTML (Structure)
+->Page title, headings, and two dice areas (Player & Computer).
+->A button (Roll Dice) to play.
+->A result section to show who won.
+->CSS (Design)
+->Centered everything on the page.
+->Big dice emojis for better visibility.
+->Styled button with hover effect.
+->JavaScript (Logic)
+->Uses Math.random() to generate numbers from 1 to 6.
+->Displays the dice face emoji (⚀ to ⚅) based on the number.
+->Compares Player’s number vs Computer’s number.
+->Updates the result text (You Win!, Computer Wins!, or Draw!).
+
+//Skills You Practiced
+
+-> Using HTML for layout.
+-> Using CSS for styling.
+-> Using JavaScript for:
+
+Random numbers.
+
+DOM manipulation (getElementById, .textContent).
+
+If-else conditions to decide winner.
+-> Event handling (button onclick).
