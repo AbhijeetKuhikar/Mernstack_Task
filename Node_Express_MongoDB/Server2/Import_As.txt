@@ -1,0 +1,23 @@
+
+//Import in Node.js//
+
+Definition: `import` is used to include functions, classes, or modules from other files or packages.
+Syntax:
+
+  import { functionName as alias } from 'module-name';
+
+Example
+
+import { readFile as rf } from 'fs';
+
+rf('data.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+
+Uses
+
+1. Code Reusability → use functions or classes from other files instead of rewriting them.
+2. Modularity → split code into small, manageable modules.
+3. Readability → cleaner code by importing only what is needed.
+4. Flexibility → with `as`, you can rename imports to avoid conflicts or make them shorter.
