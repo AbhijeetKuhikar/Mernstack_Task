@@ -1,3 +1,8 @@
-Node_Express_MongoDB\Server3\package-lock.json
-Node_Express_MongoDB\Server3\node_modules
-Node_Express_MongoDB\Server3\config.env
+/Node_Express_MongoDB/Api_Server/node_modules
+/Node_Express_MongoDB/Api_Server/package-lock.json
+/Node_Express_MongoDB/Api_Server/config.env
+
+/Node_Express_MongoDB/Api_Server2/node_modules
+/Node_Express_MongoDB/Api_Server2/package-lock.json
+/Node_Express_MongoDB/Api_Server2/config.env
+
