@@ -1,0 +1,36 @@
+// What is RESTful API?
+
+A RESTful API is an interface that allows two systems to communicate using the principles of REST (Representational State Transfer).
+It is commonly used for web services, where data is exchanged between client (like browser, app) and server.
+
+//Key Principles of REST
+
+1. Client-Server → Client (frontend) and Server (backend) are independent.
+2. Stateless → Each request contains all necessary information (server doesn’t remember past requests).
+3. Uniform Interface → Standard way of accessing resources (via URLs, HTTP methods).
+4. Resource-Based → Everything (user, product, order) is treated as a resource accessed via a unique URL.
+5. Representation → Resources can be represented in formats like JSON, XML, etc.
+6. Cacheable → Responses can be stored (cached) for efficiency.
+
+//Common HTTP Methods in REST
+
+GET → Retrieve data (e.g., fetch a user).
+POST → Create new data (e.g., add a new user).
+PUT → Update existing data fully.
+PATCH → Update partially.
+DELETE → Remove data.
+
+//Example
+
+GET /users → Get all users
+GET /users/1 → Get user with ID 1
+POST /users → Create new user
+PUT /users/1 → Update user with ID 1
+DELETE /users/1 → Delete user with ID 1
+
+//Benefits
+
+Simple and easy to use
+Scalable
+Platform and language independent
+Widely supported
