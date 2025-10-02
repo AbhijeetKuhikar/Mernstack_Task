@@ -6,3 +6,6 @@
 /Node_Express_MongoDB/Api_Server2/package-lock.json
 /Node_Express_MongoDB/Api_Server2/config.env
 
+/Node_Express_MongoDB/api_server/node_modules
+/Node_Express_MongoDB/api_server/package-lock.json
+/Node_Express_MongoDB/api_server/config.env

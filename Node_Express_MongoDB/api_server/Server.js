@@ -1,6 +1,8 @@
 import express from "express"
 import dotenv from "dotenv"
-import { router } from "./routers/routers.js"
+import "./database/conn.js"
+import { router } from "./routers/router.js"
+import mongoose from "mongoose"
 
 dotenv.config({ path: "./config.env" })
 
@@ -10,7 +12,11 @@ let port = process.env.PORT || 5005
 
 app.use(express.urlencoded({ extended: true }))
 
+app.use(express.json())
+
 app.use(express.static("public"))
+
+app.get('/', (req, res) => { res.redirect("/languages/api/get-details") })
 
 app.use("/languages/api", router)
 
